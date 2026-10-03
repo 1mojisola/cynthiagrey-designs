@@ -1,1 +1,445 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Cynthiagrey Designs — premium Christmas lights, trees and decorations."><title>Cynthiagrey Designs | Where Christmas Comes to Life</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body><div class="snow"></div><header><a class="brand" href="#top"><span class="mark">CG</span><span><b>CYNTHIAGREY</b><small>DESIGNS</small></span></a><button class="menu">☰</button><nav><a href="#collection">Collection</a><a href="#gallery">Gallery</a><a href="#story">About</a><a href="#contact">Contact</a><a class="navbtn" data-wa href="#">WhatsApp</a></nav></header><main id="top"><section class="hero"><div class="heroText"><span class="eyebrow">THE MAGIC OF THE SEASON</span><h1>Where Christmas<br><em>Comes to Life.</em></h1><p>Exquisite Christmas lights, trees and decorations curated to make every celebration beautifully unforgettable.</p><div class="actions"><a class="gold" href="#collection">Explore Collection →</a><a class="ghost" data-wa href="#">Chat on WhatsApp</a></div></div><span class="scroll">SCROLL TO DISCOVER ↓</span></section><section class="section" id="collection"><span class="eyebrow">01 / THE COLLECTION</span><div class="intro"><h2>A little more <em>magic.</em></h2><p>From the first glow of a Christmas light to the final ornament on the tree, Cynthiagrey Designs helps transform ordinary spaces into warm, memorable festive experiences.</p></div><div class="cards"><article><img src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?auto=format&fit=crop&w=1200&q=85"><div><small>01</small><h3>Christmas Trees</h3><p>Statement trees made for unforgettable spaces.</p></div></article><article><img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?auto=format&fit=crop&w=1000&q=85"><div><small>02</small><h3>Christmas Lights</h3><p>Warm, luminous details that change the atmosphere.</p></div></article><article><img src="https://images.unsplash.com/photo-1576919228236-a097c32a5cd4?auto=format&fit=crop&w=1000&q=85"><div><small>03</small><h3>Tree Decorations</h3><p>Beautiful finishing touches for your festive vision.</p></div></article></div></section><section class="statement"><div><span>MAKE THE SEASON</span><h2>Feel <em>extraordinary.</em></h2><p>Thoughtful details. Beautiful finishes. A Christmas atmosphere your guests will remember.</p></div></section><section class="section" id="gallery"><div class="heading"><div><span class="eyebrow">02 / INSPIRATION</span><h2>Christmas, <em>beautifully done.</em></h2></div><p>Explore the mood behind the Cynthiagrey Designs experience.</p></div><div class="gallery"><img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=1200&q=85"><img src="https://images.unsplash.com/photo-1545608444-f045a8db19d8?auto=format&fit=crop&w=900&q=85"><img src="https://images.unsplash.com/photo-1607453998774-d533f65dac99?auto=format&fit=crop&w=900&q=85"><img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?auto=format&fit=crop&w=1200&q=85"></div></section><section class="story section" id="story"><div class="storyimg"><img src="https://images.unsplash.com/photo-1544273677-90e40c4c7b7b?auto=format&fit=crop&w=1200&q=85"><b>FOR THE<br>FESTIVE<br>SEASON</b></div><div><span class="eyebrow">03 / THE EXPERIENCE</span><h2>Because the details<br>make the <em>season.</em></h2><p>Cynthiagrey Designs is built around one simple idea: Christmas should feel special. Every light, tree and decorative detail can help create the mood you want — warm, elegant, joyful and unforgettable.</p><p>Tell us the look you're imagining and let's bring your Christmas vision to life.</p><a class="link" data-wa href="#">Start a conversation ↗</a></div></section><section class="section process"><span class="eyebrow">04 / HOW TO ORDER</span><h2>Your Christmas starts <em>here.</em></h2><div class="steps"><div><small>01</small><h3>Browse</h3><p>Explore the collection and find the pieces that fit your vision.</p></div><div><small>02</small><h3>Choose</h3><p>Tell us what you need and share your preferred style.</p></div><div><small>03</small><h3>Connect</h3><p>Message us on WhatsApp to discuss availability and your order.</p></div><div><small>04</small><h3>Celebrate</h3><p>Bring the finished look into your space and enjoy the season.</p></div></div></section><section class="cta" id="contact"><span class="eyebrow">READY FOR THE SEASON?</span><h2>Let's make your<br><em>Christmas glow.</em></h2><p>For enquiries, orders and Christmas decoration ideas, start a conversation with Cynthiagrey Designs.</p><a class="gold" data-wa href="#">Chat on WhatsApp →</a><a class="fb" href="https://www.facebook.com/profile.php?id=100028131534839" target="_blank">Visit us on Facebook ↗</a></section></main><footer><div class="brand"><span class="mark">CG</span><span><b>CYNTHIAGREY DESIGNS</b><small>WHERE CHRISTMAS COMES TO LIFE.</small></span></div><p>© <span id="year"></span> Cynthiagrey Designs.</p></footer><div class="float"><a data-wa href="#">✆</a></div><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cynthiagrey Designs | Where Christmas Comes to Life</title>
+
+<meta name="description" content="Cynthiagrey Designs — Christmas lights, Christmas trees and beautiful festive decorations.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:#061912;
+  color:#f7f1e3;
+  font-family:"DM Sans",sans-serif;
+  overflow-x:hidden;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.snow{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:20;
+  opacity:.35;
+  background-image:
+    radial-gradient(circle at 10% 20%,#fff 0 1px,transparent 2px),
+    radial-gradient(circle at 75% 30%,#fff 0 1px,transparent 2px),
+    radial-gradient(circle at 45% 75%,#fff 0 1px,transparent 2px),
+    radial-gradient(circle at 90% 80%,#fff 0 1px,transparent 2px);
+  background-size:180px 180px,240px 240px,210px 210px,300px 300px;
+  animation:snow 18s linear infinite;
+}
+
+@keyframes snow{
+  to{
+    background-position:
+      30px 180px,
+      -30px 240px,
+      20px 210px,
+      -20px 300px;
+  }
+}
+
+/* HEADER */
+
+.site-header{
+  height:82px;
+  padding:0 5vw;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  z-index:30;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+
+.brand{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+.brand-mark{
+  width:42px;
+  height:42px;
+  border:1px solid #d7b66a;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  color:#d7b66a;
+  font-family:"Cormorant Garamond",serif;
+  font-size:17px;
+}
+
+.brand strong{
+  display:block;
+  letter-spacing:3px;
+  font-size:12px;
+}
+
+.brand small{
+  display:block;
+  color:#d7b66a;
+  letter-spacing:4px;
+  font-size:8px;
+  margin-top:3px;
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  gap:30px;
+  font-size:12px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+}
+
+.nav a{
+  opacity:.85;
+  transition:.3s;
+}
+
+.nav a:hover{
+  color:#e1c47d;
+}
+
+.nav-cta{
+  padding:12px 18px;
+  border:1px solid #d7b66a;
+  color:#e5ca86!important;
+}
+
+.menu-toggle{
+  display:none;
+  background:none;
+  border:0;
+  color:#fff;
+  font-size:26px;
+}
+
+/* HERO */
+
+.hero{
+  min-height:100vh;
+  display:grid;
+  place-items:center;
+  position:relative;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3,18,12,.96),
+      rgba(3,18,12,.70),
+      rgba(3,18,12,.20)
+    ),
+    url("https://images.unsplash.com/photo-1512389142860-9c449e58a543?auto=format&fit=crop&w=2200&q=90")
+    center/cover;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0;
+  height:30%;
+  background:linear-gradient(transparent,#061912);
+}
+
+.hero-content{
+  width:min(1100px,90%);
+  position:relative;
+  z-index:2;
+  padding-top:90px;
+}
+
+.eyebrow,
+.section-kicker{
+  font-size:10px;
+  letter-spacing:4px;
+  color:#d7b66a;
+  font-weight:700;
+}
+
+.hero h1{
+  font-family:"Cormorant Garamond",serif;
+  font-weight:600;
+  font-size:clamp(65px,9vw,128px);
+  line-height:.83;
+  margin:24px 0 30px;
+  letter-spacing:-4px;
+}
+
+.hero h1 em,
+h2 em{
+  font-style:italic;
+  color:#d9bb72;
+  font-weight:500;
+}
+
+.hero-copy{
+  max-width:570px;
+  font-size:17px;
+  line-height:1.8;
+  color:#d7ded9;
+}
+
+.hero-actions{
+  display:flex;
+  gap:14px;
+  margin-top:34px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:20px;
+  padding:16px 23px;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-weight:700;
+  transition:.3s;
+}
+
+.btn-gold{
+  background:#d7b66a;
+  color:#061912;
+}
+
+.btn-gold:hover{
+  background:#f0d18b;
+  transform:translateY(-2px);
+}
+
+.btn-ghost{
+  border:1px solid rgba(255,255,255,.4);
+}
+
+.btn-ghost:hover{
+  border-color:#d7b66a;
+  color:#d7b66a;
+}
+
+.hero-scroll{
+  position:absolute;
+  bottom:32px;
+  left:5vw;
+  font-size:9px;
+  letter-spacing:3px;
+  color:#9ba69f;
+  z-index:3;
+}
+
+/* SECTIONS */
+
+.section{
+  padding:120px 7vw;
+}
+
+.intro{
+  background:#061912;
+}
+
+.intro-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10vw;
+  margin:25px 0 70px;
+}
+
+.intro h2,
+.section-heading h2,
+.story h2,
+.process h2{
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(50px,6vw,82px);
+  font-weight:500;
+  line-height:.9;
+  margin:0;
+  letter-spacing:-2px;
+}
+
+.intro-grid>p,
+.section-heading>p{
+  font-size:15px;
+  line-height:1.9;
+  color:#aeb9b2;
+  max-width:510px;
+  align-self:end;
+}
+
+/* COLLECTION */
+
+.collection-grid{
+  display:grid;
+  grid-template-columns:1.2fr 1fr 1fr;
+  gap:18px;
+}
+
+.collection-card{
+  height:520px;
+  position:relative;
+  overflow:hidden;
+  background:#102d22;
+}
+
+.collection-card.tall{
+  height:600px;
+}
+
+.collection-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .8s;
+}
+
+.collection-card:hover img{
+  transform:scale(1.06);
+}
+
+.card-overlay{
+  position:absolute;
+  inset:auto 0 0;
+  padding:28px;
+  background:linear-gradient(transparent,rgba(0,0,0,.88));
+  min-height:190px;
+}
+
+.card-overlay span{
+  color:#d7b66a;
+  font-size:10px;
+  letter-spacing:3px;
+}
+
+.card-overlay h3{
+  font-family:"Cormorant Garamond",serif;
+  font-size:34px;
+  margin:9px 0 5px;
+}
+
+.card-overlay p{
+  font-size:12px;
+  color:#d0d7d2;
+  line-height:1.5;
+}
+
+/* STATEMENT */
+
+.statement{
+  padding:150px 7vw;
+  text-align:center;
+  background:
+    linear-gradient(rgba(101,10,22,.78),rgba(101,10,22,.78)),
+    url("https://images.unsplash.com/photo-1576919228236-a097c32a5cd4?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+  position:relative;
+}
+
+.statement-inner{
+  position:relative;
+  z-index:1;
+}
+
+.statement span{
+  font-size:10px;
+  letter-spacing:5px;
+}
+
+.statement h2{
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(60px,8vw,110px);
+  line-height:.85;
+  margin:25px 0;
+  font-weight:500;
+}
+
+.statement h2 em{
+  color:#f4d58e;
+}
+
+.statement p{
+  max-width:500px;
+  margin:auto;
+  line-height:1.8;
+  color:#f7e7d2;
+}
+
+/* GALLERY */
+
+.section-heading{
+  display:flex;
+  justify-content:space-between;
+  gap:40px;
+  align-items:end;
+  margin-bottom:55px;
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:1.3fr .8fr .8fr;
+  grid-template-rows:250px 300px;
+  gap:16px;
+}
+
+.gallery-grid img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.g1{
+  grid-row:span 2;
+}
+
+.g4{
+  grid-column:2 / 4;
+}
+
+/* STORY */
+
+.story{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8vw;
+  align-items:center;
+  background:#f3eddf;
+  color:#11251d;
+}
+
+.story-image{
+  height:650px;
+  position:relative;
+}
+
+.story-image>img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.image
