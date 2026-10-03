@@ -442,4 +442,873 @@ h2 em{
   object-fit:cover;
 }
 
-.image
+.image-badge{
+  position:absolute;
+  right:-30px;
+  bottom:35px;
+  background:#d7b66a;
+  color:#061912;
+  width:135px;
+  height:135px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  font-size:8px;
+  letter-spacing:2px;
+  line-height:1.5;
+}
+
+.image-badge strong{
+  font-family:"Cormorant Garamond",serif;
+  font-size:17px;
+}
+
+.story-copy h2{
+  margin:25px 0 30px;
+}
+
+.story-copy p{
+  line-height:1.9;
+  color:#53605a;
+  max-width:500px;
+}
+
+.text-link{
+  display:inline-block;
+  margin-top:20px;
+  color:#8b681e;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  border-bottom:1px solid #c6a55d;
+  padding-bottom:8px;
+}
+
+/* PROCESS */
+
+.process{
+  background:#0c251c;
+}
+
+.process-heading{
+  margin:25px 0 65px;
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border-top:1px solid rgba(255,255,255,.15);
+}
+
+.step{
+  padding:35px 25px 20px;
+  border-right:1px solid rgba(255,255,255,.15);
+  min-height:220px;
+}
+
+.step:last-child{
+  border:0;
+}
+
+.step span{
+  color:#d7b66a;
+  font-size:10px;
+  letter-spacing:3px;
+}
+
+.step h3{
+  font-family:"Cormorant Garamond",serif;
+  font-size:30px;
+  margin:20px 0 10px;
+}
+
+.step p{
+  font-size:12px;
+  color:#9eaaa3;
+  line-height:1.7;
+}
+
+/* CTA */
+
+.cta{
+  padding:150px 7vw;
+  text-align:center;
+  background:#061912;
+  position:relative;
+  overflow:hidden;
+}
+
+.cta-inner{
+  position:relative;
+  z-index:1;
+}
+
+.cta h2{
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(60px,8vw,105px);
+  line-height:.82;
+  margin:25px 0;
+}
+
+.cta p:not(.eyebrow){
+  max-width:520px;
+  margin:0 auto 30px;
+  color:#aeb9b2;
+  line-height:1.8;
+}
+
+.facebook-link{
+  display:block;
+  margin-top:22px;
+  color:#bfc8c2;
+  font-size:11px;
+  letter-spacing:1px;
+}
+
+/* FOOTER */
+
+footer{
+  border-top:1px solid rgba(255,255,255,.1);
+  padding:32px 7vw;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:#77837c;
+  font-size:10px;
+  letter-spacing:1px;
+}
+
+.footer-brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.footer-brand .brand-mark{
+  width:34px;
+  height:34px;
+  font-size:13px;
+}
+
+.footer-brand strong{
+  display:block;
+  color:#ddd7c7;
+  font-size:10px;
+  letter-spacing:2px;
+}
+
+.footer-brand small{
+  font-size:7px;
+  letter-spacing:2px;
+}
+
+/* WHATSAPP */
+
+.whatsapp-float{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:50;
+}
+
+.whatsapp-float a{
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  background:#d7b66a;
+  color:#061912;
+  display:grid;
+  place-items:center;
+  font-size:24px;
+  box-shadow:0 12px 30px rgba(0,0,0,.3);
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+  .site-header{
+    height:70px;
+  }
+
+  .menu-toggle{
+    display:block;
+  }
+
+  .nav{
+    display:none;
+    position:absolute;
+    top:70px;
+    left:0;
+    right:0;
+    background:#061912;
+    padding:25px 7vw;
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .nav.open{
+    display:flex;
+  }
+
+  .hero h1{
+    font-size:clamp(58px,16vw,92px);
+    letter-spacing:-2px;
+  }
+
+  .intro-grid,
+  .story{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+  .collection-grid{
+    grid-template-columns:1fr;
+  }
+
+  .collection-card,
+  .collection-card.tall{
+    height:500px;
+  }
+
+  .section-heading{
+    display:block;
+  }
+
+  .section-heading>p{
+    margin-top:25px;
+  }
+
+  .gallery-grid{
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:260px 260px;
+  }
+
+  .g1{
+    grid-row:auto;
+  }
+
+  .g4{
+    grid-column:auto;
+  }
+
+  .story-image{
+    height:500px;
+  }
+
+  .steps{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .step:nth-child(2){
+    border-right:0;
+  }
+
+  footer{
+    display:block;
+    text-align:center;
+  }
+
+  footer>p{
+    margin-top:20px;
+  }
+}
+
+@media(max-width:520px){
+
+  .hero{
+    background-position:62% center;
+  }
+
+  .hero-content{
+    padding-top:100px;
+  }
+
+  .hero-scroll{
+    display:none;
+  }
+
+  .section{
+    padding:85px 6vw;
+  }
+
+  .statement,
+  .cta{
+    padding:100px 6vw;
+  }
+
+  .collection-card,
+  .collection-card.tall{
+    height:440px;
+  }
+
+  .gallery-grid{
+    grid-template-columns:1fr;
+    grid-template-rows:300px 220px 220px 280px;
+  }
+
+  .g4{
+    grid-column:auto;
+  }
+
+  .story-image{
+    height:430px;
+  }
+
+  .image-badge{
+    right:-12px;
+  }
+
+  .steps{
+    grid-template-columns:1fr;
+  }
+
+  .step{
+    border-right:0!important;
+    border-bottom:1px solid rgba(255,255,255,.15)!important;
+  }
+
+  .step:last-child{
+    border-bottom:0!important;
+  }
+
+  .cta h2{
+    font-size:65px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="snow"></div>
+
+<header class="site-header">
+
+<a class="brand" href="#top">
+  <span class="brand-mark">CG</span>
+
+  <span>
+    <strong>CYNTHIAGREY</strong>
+    <small>DESIGNS</small>
+  </span>
+</a>
+
+<button class="menu-toggle" aria-label="Open menu">☰</button>
+
+<nav class="nav">
+  <a href="#collection">Collection</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#story">About</a>
+  <a href="#contact">Contact</a>
+
+  <a class="nav-cta whatsapp-link" href="#">
+    WhatsApp
+  </a>
+</nav>
+
+</header>
+
+
+<main id="top">
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<p class="eyebrow">
+THE MAGIC OF THE SEASON
+</p>
+
+<h1>
+Where Christmas<br>
+<em>Comes to Life.</em>
+</h1>
+
+<p class="hero-copy">
+Exquisite Christmas lights, trees and decorations curated to make every celebration beautifully unforgettable.
+</p>
+
+<div class="hero-actions">
+
+<a class="btn btn-gold" href="#collection">
+Explore Collection →
+</a>
+
+<a class="btn btn-ghost whatsapp-link" href="#">
+Chat on WhatsApp
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-scroll">
+SCROLL TO DISCOVER ↓
+</div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section class="intro section">
+
+<div class="section-kicker">
+01 / THE COLLECTION
+</div>
+
+<div class="intro-grid">
+
+<div>
+<h2>
+A little more <em>magic.</em>
+</h2>
+</div>
+
+<p>
+From the first glow of a Christmas light to the final ornament on the tree, Cynthiagrey Designs helps transform ordinary spaces into warm, memorable festive experiences.
+</p>
+
+</div>
+
+
+<div class="collection-grid" id="collection">
+
+
+<article class="collection-card tall">
+
+<img
+src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?auto=format&fit=crop&w=1200&q=85"
+alt="Christmas tree decoration"
+onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=1200&q=85';"
+>
+
+<div class="card-overlay">
+
+<span>01</span>
+
+<h3>
+Christmas Trees
+</h3>
+
+<p>
+Statement trees made for unforgettable spaces.
+</p>
+
+</div>
+
+</article>
+
+
+
+<article class="collection-card">
+
+<img
+src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?auto=format&fit=crop&w=1000&q=85"
+alt="Christmas lights"
+onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=1000&q=85';"
+>
+
+<div class="card-overlay">
+
+<span>02</span>
+
+<h3>
+Christmas Lights
+</h3>
+
+<p>
+Warm, luminous details that change the atmosphere.
+</p>
+
+</div>
+
+</article>
+
+
+
+<article class="collection-card">
+
+<img
+src="https://images.unsplash.com/photo-1576919228236-a097c32a5cd4?auto=format&fit=crop&w=1000&q=85"
+alt="Christmas ornaments"
+onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1543589077-47d81606c1bf?auto=format&fit=crop&w=1000&q=85';"
+>
+
+<div class="card-overlay">
+
+<span>03</span>
+
+<h3>
+Tree Decorations
+</h3>
+
+<p>
+Beautiful finishing touches for your festive vision.
+</p>
+
+</div>
+
+</article>
+
+
+</div>
+
+</section>
+
+
+<!-- STATEMENT -->
+
+<section class="statement">
+
+<div class="statement-inner">
+
+<span>
+MAKE THE SEASON
+</span>
+
+<h2>
+Feel <em>extraordinary.</em>
+</h2>
+
+<p>
+Thoughtful details. Beautiful finishes. A Christmas atmosphere your guests will remember.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section class="gallery section" id="gallery">
+
+<div class="section-heading">
+
+<div>
+
+<div class="section-kicker">
+02 / INSPIRATION
+</div>
+
+<h2>
+Christmas, <em>beautifully done.</em>
+</h2>
+
+</div>
+
+<p>
+Explore the mood behind the Cynthiagrey Designs experience.
+</p>
+
+</div>
+
+
+<div class="gallery-grid">
+
+<img
+class="g1"
+src="https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=1200&q=85"
+alt="Beautiful Christmas tree"
+onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1543589077-47d81606c1bf?auto=format&fit=crop&w=1200&q=85';"
+>
+
+<img
+class="g2"
+src="https://images.unsplash.com/photo-1545608444-f045a8db19d8?auto=format&fit=crop&w=900&q=85"
+alt="Christmas decoration"
+onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1512389142860-9c449e58a543?auto=format&fit=crop&w=900&q=85';"
+>
+
+<img
+class="g3"
+src="https://images.unsplash.com/photo-1607453998774-d533f65dac99?auto=format&fit=crop&w=900&q=85"
+alt="Festive Christmas interior"
+onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1576919228236-a097c32a5cd4?auto=format&fit=crop&w=900&q=85';"
+>
+
+<img
+class="g4"
+src="https://images.unsplash.com/photo-1544273677-90e40c4c7b7b?auto=format&fit=crop&w=1200&q=85"
+alt="Christmas lights and decorations"
+onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1543589077-47d81606c1bf?auto=format&fit=crop&w=1200&q=85';"
+>
+
+</div>
+
+</section>
+
+
+<!-- STORY -->
+
+<section class="story section" id="story">
+
+<div class="story-image">
+
+<img
+src="https://images.unsplash.com/photo-1544273677-90e40c4c7b7b?auto=format&fit=crop&w=1200&q=85"
+alt="Christmas atmosphere"
+onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=1200&q=85';"
+>
+
+<div class="image-badge">
+EST.<br>
+<strong>FOR THE<br>FESTIVE<br>SEASON</strong>
+</div>
+
+</div>
+
+
+<div class="story-copy">
+
+<div class="section-kicker">
+03 / THE EXPERIENCE
+</div>
+
+<h2>
+Because the details<br>
+make the <em>season.</em>
+</h2>
+
+<p>
+Cynthiagrey Designs is built around one simple idea: Christmas should feel special.
+</p>
+
+<p>
+Every light, tree and decorative detail can help create the mood you want — warm, elegant, joyful and unforgettable.
+</p>
+
+<p>
+Tell us the look you're imagining and let's bring your Christmas vision to life.
+</p>
+
+<a class="text-link whatsapp-link" href="#">
+Start a conversation ↗
+</a>
+
+</div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="process section">
+
+<div class="section-kicker">
+04 / HOW TO ORDER
+</div>
+
+<div class="process-heading">
+
+<h2>
+Your Christmas starts <em>here.</em>
+</h2>
+
+</div>
+
+
+<div class="steps">
+
+<div class="step">
+
+<span>01</span>
+
+<h3>Browse</h3>
+
+<p>
+Explore the collection and find the pieces that fit your vision.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<span>02</span>
+
+<h3>Choose</h3>
+
+<p>
+Tell us what you need and share your preferred style.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<span>03</span>
+
+<h3>Connect</h3>
+
+<p>
+Message us on WhatsApp to discuss availability and your order.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<span>04</span>
+
+<h3>Celebrate</h3>
+
+<p>
+Bring the finished look into your space and enjoy the season.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta" id="contact">
+
+<div class="cta-inner">
+
+<p class="eyebrow">
+READY FOR THE SEASON?
+</p>
+
+<h2>
+Let's make your<br>
+<em>Christmas glow.</em>
+</h2>
+
+<p>
+For enquiries, orders and Christmas decoration ideas, start a conversation with Cynthiagrey Designs.
+</p>
+
+<a class="btn btn-gold whatsapp-link" href="#">
+Chat on WhatsApp →
+</a>
+
+<a
+class="facebook-link"
+href="https://www.facebook.com/profile.php?id=100028131534839"
+target="_blank"
+rel="noopener"
+>
+Visit us on Facebook ↗
+</a>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-brand">
+
+<span class="brand-mark">
+CG
+</span>
+
+<div>
+<strong>
+CYNTHIAGREY DESIGNS
+</strong>
+
+<small>
+WHERE CHRISTMAS COMES TO LIFE.
+</small>
+</div>
+
+</div>
+
+<p>
+© <span id="year"></span> Cynthiagrey Designs
+</p>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<div class="whatsapp-float">
+
+<a
+class="whatsapp-link"
+href="#"
+aria-label="Chat with Cynthiagrey Designs on WhatsApp"
+>
+✆
+</a>
+
+</div>
+
+
+<script>
+
+/* ============================
+   CYNTHIAGREY WHATSAPP
+   ============================ */
+
+const whatsappNumber = "2349092171994";
+
+const whatsappMessage =
+"Hello Cynthiagrey Designs, I’d like to make an enquiry about your Christmas collection.";
+
+const whatsappURL =
+"https://wa.me/" +
+whatsappNumber +
+"?text=" +
+encodeURIComponent(whatsappMessage);
+
+document
+.querySelectorAll(".whatsapp-link")
+.forEach(function(link){
+
+  link.href = whatsappURL;
+
+});
+
+
+/* ============================
+   MOBILE MENU
+   ============================ */
+
+const menuButton =
+document.querySelector(".menu-toggle");
+
+const navigation =
+document.querySelector(".nav");
+
+if(menuButton){
+
+  menuButton.addEventListener("click",function(){
+
+    navigation.classList.toggle("open");
+
+  });
+
+}
+
+
+/* ============================
+   YEAR
+   ============================ */
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
