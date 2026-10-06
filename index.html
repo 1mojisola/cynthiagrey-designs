@@ -1,1090 +1,1784 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Cynthiagrey Designs | Christmas Styling & Festive Installations</title>
-
-<meta name="description"
-content="Cynthiagrey Designs — Christmas styling, lighting and festive installations crafted to transform spaces.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-:root{
-  --black:#080808;
-  --black2:#11100f;
-  --cream:#f5f0e7;
-  --gold:#c9a86a;
-  --gold2:#ead7a7;
-  --muted:#aaa397;
-  --line:rgba(234,215,167,.2);
-}
-
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  background:var(--black);
-  color:var(--cream);
-  font-family:"DM Sans",sans-serif;
-  overflow-x:hidden;
-}
-
-a{
-  color:inherit;
-  text-decoration:none;
-}
-
-img{
-  display:block;
-  width:100%;
-}
-
-button{
-  font:inherit;
-}
-
-/* NAV */
-
-header{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  z-index:100;
-  padding:22px 6vw;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  background:linear-gradient(
-    to bottom,
-    rgba(0,0,0,.9),
-    rgba(0,0,0,0)
-  );
-}
-
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
-
-.brand img{
-  width:44px;
-  height:44px;
-  object-fit:contain;
-}
-
-.brand-text strong{
-  display:block;
-  font-size:12px;
-  letter-spacing:4px;
-}
-
-.brand-text span{
-  display:block;
-  margin-top:3px;
-  color:var(--gold2);
-  font-size:8px;
-  letter-spacing:3px;
-}
-
-nav{
-  display:flex;
-  align-items:center;
-  gap:30px;
-  font-size:11px;
-  letter-spacing:1.5px;
-  text-transform:uppercase;
-}
-
-nav a{
-  opacity:.8;
-  transition:.3s;
-}
-
-nav a:hover{
-  opacity:1;
-  color:var(--gold2);
-}
-
-.nav-cta{
-  padding:11px 17px;
-  border:1px solid var(--gold);
-  color:var(--gold2);
-}
-
-/* HERO */
-
-.hero{
-  min-height:100vh;
-  position:relative;
-  display:flex;
-  align-items:flex-end;
-  padding:150px 7vw 90px;
-  overflow:hidden;
-}
-
-.hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(0,0,0,.88) 0%,
-      rgba(0,0,0,.5) 45%,
-      rgba(0,0,0,.1) 100%
-    ),
-    url("https://raw.githubusercontent.com/1mojisola/cynthiagrey-designs/main/IMG_3021.JPG")
-    center/cover;
-  transform:scale(1.02);
-}
-
-.hero::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    radial-gradient(
-      circle at 75% 35%,
-      rgba(201,168,106,.18),
-      transparent 32%
-    );
-}
-
-.hero-content{
-  position:relative;
-  z-index:2;
-  max-width:780px;
-}
-
-.eyebrow{
-  color:var(--gold2);
-  font-size:10px;
-  letter-spacing:5px;
-  text-transform:uppercase;
-  margin-bottom:22px;
-}
-
-h1{
-  font-family:"Cormorant Garamond",serif;
-  font-size:clamp(65px,10vw,145px);
-  line-height:.82;
-  font-weight:500;
-  letter-spacing:-5px;
-}
-
-h1 em{
-  color:var(--gold2);
-  font-style:italic;
-}
-
-.hero-copy{
-  max-width:560px;
-  margin-top:30px;
-  color:#d0cbc0;
-  font-size:16px;
-  line-height:1.8;
-}
-
-.hero-actions{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-  margin-top:35px;
-}
-
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  padding:15px 23px;
-  font-size:10px;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  transition:.3s;
-}
-
-.btn-gold{
-  background:var(--gold);
-  color:#090806;
-}
-
-.btn-gold:hover{
-  background:var(--gold2);
-}
-
-.btn-outline{
-  border:1px solid rgba(255,255,255,.35);
-}
-
-.btn-outline:hover{
-  border-color:var(--gold);
-  color:var(--gold2);
-}
-
-/* GENERAL */
-
-.section{
-  padding:120px 7vw;
-}
-
-.section-dark{
-  background:#0c0c0b;
-}
-
-.kicker{
-  color:var(--gold);
-  font-size:9px;
-  letter-spacing:4px;
-  text-transform:uppercase;
-  margin-bottom:25px;
-}
-
-.section-title{
-  font-family:"Cormorant Garamond",serif;
-  font-size:clamp(50px,7vw,95px);
-  font-weight:500;
-  line-height:.9;
-}
-
-.section-title em{
-  color:var(--gold2);
-}
-
-/* INTRO */
-
-.intro-grid{
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:80px;
-  align-items:end;
-}
-
-.intro-text{
-  color:#b9b3a7;
-  font-size:17px;
-  line-height:1.9;
-  max-width:550px;
-}
-
-/* FEATURE */
-
-.feature{
-  display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:25px;
-  margin-top:70px;
-}
-
-.feature-main{
-  height:650px;
-  overflow:hidden;
-  position:relative;
-}
-
-.feature-main img{
-  height:100%;
-  object-fit:cover;
-  transition:transform .8s;
-}
-
-.feature-main:hover img{
-  transform:scale(1.04);
-}
-
-.feature-side{
-  display:grid;
-  gap:25px;
-}
-
-.feature-small{
-  height:312px;
-  overflow:hidden;
-}
-
-.feature-small img{
-  height:100%;
-  object-fit:cover;
-  transition:transform .8s;
-}
-
-.feature-small:hover img{
-  transform:scale(1.04);
-}
-
-/* SERVICES */
-
-.services{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  margin-top:70px;
-  border-top:1px solid var(--line);
-}
-
-.service{
-  padding:38px 30px 38px 0;
-  border-right:1px solid var(--line);
-}
-
-.service:not(:first-child){
-  padding-left:30px;
-}
-
-.service:last-child{
-  border-right:0;
-}
-
-.number{
-  color:var(--gold);
-  font-size:10px;
-  letter-spacing:2px;
-}
-
-.service h3{
-  margin:28px 0 12px;
-  font-family:"Cormorant Garamond",serif;
-  font-size:36px;
-  font-weight:500;
-}
-
-.service p{
-  color:#9f9a90;
-  line-height:1.7;
-  font-size:14px;
-}
-
-/* GALLERY */
-
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(12,1fr);
-  grid-auto-rows:260px;
-  gap:14px;
-  margin-top:70px;
-}
-
-.gallery-item{
-  overflow:hidden;
-}
-
-.gallery-item img{
-  height:100%;
-  object-fit:cover;
-  transition:transform .8s;
-}
-
-.gallery-item:hover img{
-  transform:scale(1.06);
-}
-
-.g1{grid-column:span 5;grid-row:span 2;}
-.g2{grid-column:span 4;}
-.g3{grid-column:span 3;}
-.g4{grid-column:span 4;}
-.g5{grid-column:span 3;}
-.g6{grid-column:span 5;}
-.g7{grid-column:span 4;}
-.g8{grid-column:span 4;}
-.g9{grid-column:span 4;}
-.g10{grid-column:span 4;}
-
-/* STATEMENT */
-
-.statement{
-  padding:160px 7vw;
-  text-align:center;
-  background:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.8)),
-    url("https://raw.githubusercontent.com/1mojisola/cynthiagrey-designs/main/IMG_8489.JPG")
-    center/cover fixed;
-}
-
-.statement h2{
-  max-width:1000px;
-  margin:auto;
-  font-family:"Cormorant Garamond",serif;
-  font-size:clamp(50px,8vw,110px);
-  line-height:.9;
-  font-weight:500;
-}
-
-.statement h2 em{
-  color:var(--gold2);
-}
-
-/* EXPERIENCE */
-
-.experience{
-  display:grid;
-  grid-template-columns:.8fr 1.2fr;
-  gap:100px;
-  align-items:start;
-}
-
-.experience-copy{
-  color:#aaa49a;
-  line-height:1.9;
-  font-size:15px;
-}
-
-.experience-list{
-  border-top:1px solid var(--line);
-}
-
-.experience-row{
-  display:grid;
-  grid-template-columns:80px 1fr;
-  gap:25px;
-  padding:25px 0;
-  border-bottom:1px solid var(--line);
-}
-
-.experience-row span{
-  color:var(--gold);
-  font-size:11px;
-}
-
-.experience-row h3{
-  font-family:"Cormorant Garamond",serif;
-  font-size:32px;
-  font-weight:500;
-}
-
-/* CONTACT */
-
-.contact{
-  text-align:center;
-  padding:150px 7vw;
-  background:#11100f;
-}
-
-.contact h2{
-  font-family:"Cormorant Garamond",serif;
-  font-size:clamp(60px,9vw,130px);
-  line-height:.85;
-  font-weight:500;
-}
-
-.contact h2 em{
-  color:var(--gold2);
-}
-
-.contact p{
-  max-width:550px;
-  margin:30px auto;
-  color:#aaa49a;
-  line-height:1.8;
-}
-
-.contact-actions{
-  display:flex;
-  justify-content:center;
-  gap:12px;
-  flex-wrap:wrap;
-}
-
-/* FOOTER */
-
-footer{
-  padding:35px 7vw;
-  display:flex;
-  justify-content:space-between;
-  gap:20px;
-  color:#777269;
-  font-size:10px;
-  letter-spacing:1px;
-  border-top:1px solid var(--line);
-}
-
-footer strong{
-  color:#ddd5c7;
-}
-
-/* WHATSAPP */
-
-.whatsapp{
-  position:fixed;
-  right:22px;
-  bottom:22px;
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  background:#c9a86a;
-  color:#080808;
-  display:grid;
-  place-items:center;
-  z-index:200;
-  font-size:22px;
-  box-shadow:0 12px 35px rgba(0,0,0,.5);
-}
-
-/* MOBILE */
-
-.menu{
-  display:none;
-}
-
-@media(max-width:850px){
-
-  header{
-    padding:18px 5vw;
-  }
-
-  nav{
-    display:none;
-  }
-
-  .menu{
-    display:block;
-    border:0;
-    background:none;
-    color:white;
-    font-size:25px;
-  }
-
-  .hero{
-    padding:130px 6vw 70px;
-    min-height:90vh;
-  }
-
-  .hero::before{
-    background:
-      linear-gradient(
-        0deg,
-        rgba(0,0,0,.9),
-        rgba(0,0,0,.25)
-      ),
-      url("https://raw.githubusercontent.com/1mojisola/cynthiagrey-designs/main/IMG_3021.JPG")
-      center/cover;
-  }
-
-  h1{
-    font-size:68px;
-    letter-spacing:-3px;
-  }
-
-  .intro-grid,
-  .experience{
-    grid-template-columns:1fr;
-    gap:40px;
-  }
-
-  .feature{
-    grid-template-columns:1fr;
-  }
-
-  .feature-main{
-    height:500px;
-  }
-
-  .services{
-    grid-template-columns:1fr;
-  }
-
-  .service,
-  .service:not(:first-child){
-    border-right:0;
-    border-bottom:1px solid var(--line);
-    padding:30px 0;
-  }
-
-  .gallery{
-    grid-template-columns:1fr 1fr;
-    grid-auto-rows:220px;
-  }
-
-  .g1,.g2,.g3,.g4,.g5,.g6,.g7,.g8,.g9,.g10{
-    grid-column:span 1;
-    grid-row:span 1;
-  }
-
-  .g1,
-  .g6{
-    grid-column:span 2;
-  }
-
-  .section{
-    padding:90px 6vw;
-  }
-
-  .statement{
-    padding:110px 6vw;
-  }
-
-  footer{
-    flex-direction:column;
-  }
-}
-
-@media(max-width:520px){
-
-  .brand-text strong{
-    letter-spacing:2px;
-  }
-
-  .hero{
-    min-height:100svh;
-  }
-
-  h1{
-    font-size:59px;
-  }
-
-  .hero-copy{
-    font-size:14px;
-  }
-
-  .feature-main{
-    height:430px;
-  }
-
-  .feature-small{
-    height:300px;
-  }
-
-  .gallery{
-    grid-template-columns:1fr;
-  }
-
-  .g1,.g6{
-    grid-column:span 1;
-  }
-
-  .gallery-item{
-    height:300px;
-  }
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Cynthiagrey Christmas | Transforming Spaces, Inspiring Joy</title>
+
+  <meta
+    name="description"
+    content="Cynthiagrey Christmas creates exceptional Christmas and seasonal décor installations, training and faith-inspired décor experiences across Nigeria and Africa."
+  />
+
+  <meta
+    name="keywords"
+    content="Cynthiagrey Christmas, CynthiaGrey Designs, Christmas decorations Lagos, Christmas tree decoration, Christmas lighting, seasonal decor, Christmas decor training, event decoration Lagos"
+  />
+
+  <meta name="author" content="Cynthiagrey Christmas" />
+
+  <meta property="og:title" content="Cynthiagrey Christmas | Transforming Spaces, Inspiring Joy" />
+  <meta
+    property="og:description"
+    content="Christmas and seasonal décor experiences crafted with creativity, craftsmanship and meaning."
+  />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --black: #0b0a09;
+      --black-soft: #11100e;
+      --cream: #f5efe4;
+      --cream-soft: #ebe2d4;
+      --gold: #c8a96b;
+      --gold-light: #e5cb91;
+      --gold-dark: #94733a;
+      --white: #fffdf9;
+      --muted: #aaa298;
+      --line: rgba(200, 169, 107, 0.25);
+      --serif: "Cormorant Garamond", Georgia, serif;
+      --sans: "DM Sans", Arial, sans-serif;
+      --max: 1240px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--cream);
+      font-family: var(--sans);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: 0 auto;
+    }
+
+    /* =========================
+       TOP BAR
+    ========================= */
+
+    .topbar {
+      background: #080706;
+      border-bottom: 1px solid rgba(200, 169, 107, 0.15);
+      padding: 9px 0;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .topbar a {
+      color: var(--gold-light);
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    header {
+      position: absolute;
+      top: 38px;
+      left: 0;
+      width: 100%;
+      z-index: 20;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      padding: 22px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+    }
+
+    .brand-logo {
+      width: 55px;
+      height: 55px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.92);
+      padding: 4px;
+    }
+
+    .brand-text {
+      line-height: 1.05;
+    }
+
+    .brand-name {
+      font-family: var(--serif);
+      font-size: 1.65rem;
+      letter-spacing: 0.04em;
+      color: var(--white);
+    }
+
+    .brand-sub {
+      font-size: 0.58rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-top: 5px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .nav-links a {
+      color: rgba(255, 255, 255, 0.8);
+      transition: color 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .nav-cta {
+      border: 1px solid var(--gold);
+      padding: 11px 18px;
+      color: var(--gold-light) !important;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(5, 5, 4, 0.92) 0%,
+          rgba(5, 5, 4, 0.75) 40%,
+          rgba(5, 5, 4, 0.3) 100%
+        ),
+        url("IMG_3021.JPG") center/cover no-repeat;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(
+          circle at 75% 45%,
+          rgba(200, 169, 107, 0.13),
+          transparent 35%
+        );
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+      padding-top: 80px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      font-size: 0.7rem;
+      margin-bottom: 22px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 38px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .hero h1 {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(4rem, 8vw, 7.6rem);
+      line-height: 0.86;
+      letter-spacing: -0.03em;
+      color: var(--white);
+      margin-bottom: 30px;
+    }
+
+    .hero h1 span {
+      color: var(--gold-light);
+      display: block;
+    }
+
+    .hero-copy {
+      max-width: 620px;
+      color: #ddd5c9;
+      font-size: 1.05rem;
+      line-height: 1.9;
+      margin-bottom: 35px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 52px;
+      padding: 0 24px;
+      border: 1px solid var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      font-size: 0.7rem;
+      font-weight: 600;
+      transition: all 0.25s ease;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: #17120a;
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      border-color: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .btn-outline:hover {
+      background: rgba(200, 169, 107, 0.1);
+      transform: translateY(-2px);
+    }
+
+    /* =========================
+       INTRO
+    ========================= */
+
+    .intro {
+      background: var(--cream);
+      color: var(--black);
+      padding: 115px 0;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 90px;
+      align-items: center;
+    }
+
+    .section-label {
+      color: var(--gold-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 0.68rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .intro h2,
+    .section-heading h2 {
+      font-family: var(--serif);
+      font-size: clamp(2.7rem, 5vw, 4.6rem);
+      line-height: 0.95;
+      font-weight: 500;
+      color: var(--black);
+    }
+
+    .intro-text {
+      font-size: 1.08rem;
+      color: #554f47;
+      line-height: 1.95;
+    }
+
+    .intro-text strong {
+      color: var(--black);
+      font-weight: 600;
+    }
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .services {
+      padding: 120px 0;
+      background: var(--black-soft);
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 65px;
+    }
+
+    .section-heading.light h2 {
+      color: var(--white);
+    }
+
+    .section-heading.light .section-label {
+      color: var(--gold-light);
+    }
+
+    .section-heading p {
+      margin-top: 24px;
+      max-width: 650px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+    }
+
+    .service-card {
+      padding: 45px 38px;
+      min-height: 340px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      transition: background 0.3s ease;
+    }
+
+    .service-card:hover {
+      background: rgba(200, 169, 107, 0.05);
+    }
+
+    .service-number {
+      color: var(--gold);
+      font-family: var(--serif);
+      font-size: 1.7rem;
+      margin-bottom: 35px;
+    }
+
+    .service-card h3 {
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 500;
+      color: var(--white);
+      margin-bottom: 17px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      line-height: 1.85;
+    }
+
+    /* =========================
+       FEATURE IMAGE
+    ========================= */
+
+    .feature {
+      background: var(--cream);
+      color: var(--black);
+      padding: 120px 0;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      min-height: 650px;
+    }
+
+    .feature-image {
+      overflow: hidden;
+    }
+
+    .feature-image img {
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+    }
+
+    .feature-image:hover img {
+      transform: scale(1.03);
+    }
+
+    .feature-copy {
+      padding: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #e9dfd0;
+    }
+
+    .feature-copy blockquote {
+      font-family: var(--serif);
+      font-size: clamp(2.4rem, 4vw, 4.2rem);
+      line-height: 1;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+
+    .feature-copy p {
+      color: #625b51;
+      line-height: 1.9;
+      margin-bottom: 25px;
+    }
+
+    .gold-line {
+      width: 55px;
+      height: 1px;
+      background: var(--gold-dark);
+      margin: 15px 0 25px;
+    }
+
+    /* =========================
+       GALLERY
+    ========================= */
+
+    .gallery-section {
+      padding: 120px 0;
+      background: #080807;
+    }
+
+    .gallery-intro {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 40px;
+      margin-bottom: 55px;
+    }
+
+    .gallery-intro .section-heading {
+      margin-bottom: 0;
+    }
+
+    .gallery-note {
+      max-width: 350px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .gallery {
+      columns: 3 300px;
+      column-gap: 18px;
+    }
+
+    .gallery-item {
+      break-inside: avoid;
+      margin-bottom: 18px;
+      overflow: hidden;
+      position: relative;
+      background: #151411;
+    }
+
+    .gallery-item img {
+      transition: transform 0.6s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.035);
+    }
+
+    .gallery-caption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 45px 20px 18px;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.82));
+      color: var(--white);
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item:hover .gallery-caption {
+      opacity: 1;
+    }
+
+    /* =========================
+       VALUE / WHY
+    ========================= */
+
+    .values {
+      padding: 120px 0;
+      background: var(--cream);
+      color: var(--black);
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 90px;
+    }
+
+    .values-title h2 {
+      font-family: var(--serif);
+      font-size: clamp(3rem, 5vw, 5rem);
+      line-height: 0.95;
+      font-weight: 500;
+    }
+
+    .values-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border-top: 1px solid rgba(20, 18, 15, 0.18);
+      border-left: 1px solid rgba(20, 18, 15, 0.18);
+    }
+
+    .value {
+      padding: 35px 30px;
+      border-right: 1px solid rgba(20, 18, 15, 0.18);
+      border-bottom: 1px solid rgba(20, 18, 15, 0.18);
+    }
+
+    .value h3 {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .value p {
+      color: #665f55;
+      font-size: 0.9rem;
+      line-height: 1.8;
+    }
+
+    /* =========================
+       WHO WE SERVE
+    ========================= */
+
+    .audience {
+      padding: 120px 0;
+      background: var(--black);
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      border-top: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+    }
+
+    .audience-item {
+      min-height: 220px;
+      padding: 30px 24px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .audience-icon {
+      color: var(--gold);
+      font-family: var(--serif);
+      font-size: 2rem;
+      margin-bottom: auto;
+    }
+
+    .audience-item h3 {
+      font-family: var(--serif);
+      font-size: 1.55rem;
+      font-weight: 500;
+      color: var(--white);
+    }
+
+    /* =========================
+       VISION
+    ========================= */
+
+    .vision {
+      padding: 130px 0;
+      background:
+        linear-gradient(rgba(8, 7, 6, 0.82), rgba(8, 7, 6, 0.9)),
+        url("IMG_4719.JPG") center/cover no-repeat;
+      background-attachment: fixed;
+      text-align: center;
+    }
+
+    .vision-inner {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .vision h2 {
+      font-family: var(--serif);
+      color: var(--white);
+      font-size: clamp(3rem, 6vw, 5.7rem);
+      line-height: 0.95;
+      font-weight: 500;
+      margin-bottom: 25px;
+    }
+
+    .vision p {
+      color: #d1c8ba;
+      max-width: 680px;
+      margin: 0 auto 35px;
+      line-height: 1.9;
+    }
+
+    /* =========================
+       FUTURE
+    ========================= */
+
+    .future {
+      padding: 120px 0;
+      background: var(--cream);
+      color: var(--black);
+    }
+
+    .future-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 90px;
+    }
+
+    .future h2 {
+      font-family: var(--serif);
+      font-size: clamp(3rem, 5vw, 4.8rem);
+      line-height: 0.95;
+      font-weight: 500;
+    }
+
+    .future-list {
+      counter-reset: future;
+    }
+
+    .future-item {
+      counter-increment: future;
+      display: grid;
+      grid-template-columns: 55px 1fr;
+      gap: 20px;
+      padding: 25px 0;
+      border-top: 1px solid rgba(20, 18, 15, 0.18);
+    }
+
+    .future-item:last-child {
+      border-bottom: 1px solid rgba(20, 18, 15, 0.18);
+    }
+
+    .future-number::before {
+      content: "0" counter(future);
+      color: var(--gold-dark);
+      font-family: var(--serif);
+      font-size: 1.6rem;
+    }
+
+    .future-item h3 {
+      font-family: var(--serif);
+      font-size: 1.7rem;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .future-item p {
+      color: #655e55;
+      font-size: 0.9rem;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact {
+      padding: 120px 0;
+      background: var(--black-soft);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 90px;
+      align-items: center;
+    }
+
+    .contact h2 {
+      font-family: var(--serif);
+      color: var(--white);
+      font-size: clamp(3.2rem, 6vw, 5.8rem);
+      line-height: 0.9;
+      font-weight: 500;
+      margin-bottom: 25px;
+    }
+
+    .contact-copy {
+      color: var(--muted);
+      max-width: 520px;
+      line-height: 1.9;
+    }
+
+    .contact-details {
+      border-top: 1px solid var(--line);
+    }
+
+    .contact-row {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 20px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .contact-row span:first-child {
+      color: var(--gold);
+      font-size: 0.67rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .contact-row a,
+    .contact-row span:last-child {
+      color: var(--white);
+      font-size: 0.92rem;
+    }
+
+    .contact-row a:hover {
+      color: var(--gold-light);
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 35px 0;
+      background: #070605;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .footer-brand {
+      font-family: var(--serif);
+      color: var(--white);
+      font-size: 1.35rem;
+    }
+
+    .footer-copy {
+      color: #777168;
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 18px;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold-light);
+    }
+
+    /* =========================
+       WHATSAPP FLOAT
+    ========================= */
+
+    .whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 50;
+      width: 57px;
+      height: 57px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #25d366;
+      color: white;
+      font-size: 1.35rem;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+      transition: transform 0.25s ease;
+    }
+
+    .whatsapp:hover {
+      transform: translateY(-4px) scale(1.04);
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 1000px) {
+      .nav-links {
+        gap: 15px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .audience-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .intro-grid,
+      .values-grid,
+      .future-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-image {
+        min-height: 550px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .topbar {
+        display: none;
+      }
+
+      header {
+        top: 0;
+      }
+
+      nav {
+        padding: 18px 0;
+      }
+
+      .brand-logo {
+        width: 45px;
+        height: 45px;
+      }
+
+      .brand-name {
+        font-size: 1.35rem;
+      }
+
+      .brand-sub {
+        font-size: 0.5rem;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: 92vh;
+        background-position: 62% center;
+      }
+
+      .hero-content {
+        padding-top: 90px;
+      }
+
+      .hero h1 {
+        font-size: clamp(3.7rem, 16vw, 5.5rem);
+      }
+
+      .hero-copy {
+        font-size: 0.94rem;
+      }
+
+      .intro,
+      .services,
+      .feature,
+      .gallery-section,
+      .values,
+      .audience,
+      .vision,
+      .future,
+      .contact {
+        padding: 85px 0;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        min-height: auto;
+      }
+
+      .feature-copy {
+        padding: 50px 30px;
+      }
+
+      .gallery-intro {
+        display: block;
+      }
+
+      .gallery-note {
+        margin-top: 20px;
+      }
+
+      .gallery {
+        columns: 2 150px;
+        column-gap: 10px;
+      }
+
+      .gallery-item {
+        margin-bottom: 10px;
+      }
+
+      .gallery-caption {
+        display: none;
+      }
+
+      .values-list {
+        grid-template-columns: 1fr;
+      }
+
+      .audience-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .audience-item {
+        min-height: 180px;
+      }
+
+      .vision {
+        background-attachment: scroll;
+      }
+
+      .contact-row {
+        grid-template-columns: 90px 1fr;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 460px) {
+      .audience-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .gallery {
+        columns: 1;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Christmas & Seasonal Décor</span>
+      <a href="tel:+2349092171994">+234 909 217 1994</a>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header>
+    <div class="container">
+      <nav>
+
+        <a href="#home" class="brand">
+          <img
+            src="IMG_2871.JPG"
+            alt="Cynthiagrey Christmas logo"
+            class="brand-logo"
+          />
+
+          <div class="brand-text">
+            <div class="brand-name">Cynthiagrey</div>
+            <div class="brand-sub">Christmas · CynthiaGrey Designs</div>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Our Work</a></li>
+          <li><a href="#training">Training</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home">
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+
+          <div class="eyebrow">
+            Cynthiagrey Christmas
+          </div>
+
+          <h1>
+            Transforming
+            <span>Spaces.</span>
+            Inspiring Joy.
+          </h1>
+
+          <p class="hero-copy">
+            Christmas and seasonal décor experiences crafted with creativity,
+            craftsmanship and meaning — transforming homes, businesses and
+            communities into beautiful spaces filled with the joy of the season.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#gallery" class="btn btn-primary">
+              Explore Our Work
+            </a>
+
+            <a
+              href="https://wa.me/2349092171994?text=Hello%20Cynthiagrey%20Christmas%2C%20I%27d%20like%20to%20make%20an%20enquiry."
+              target="_blank"
+              rel="noopener"
+              class="btn btn-outline"
+            >
+              Chat on WhatsApp
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro" id="about">
+      <div class="container">
+
+        <div class="intro-grid">
+
+          <div>
+            <div class="section-label">The Brand</div>
+
+            <h2>
+              More than décor.
+              A Christmas experience.
+            </h2>
+          </div>
+
+          <div class="intro-text">
+
+            <p>
+              <strong>Cynthiagrey Christmas</strong> is the Christmas and
+              seasonal décor brand under <strong>CynthiaGrey Designs</strong>,
+              created to redefine the art of festive decoration in Nigeria
+              and across Africa.
+            </p>
 
-<a href="#top" class="brand">
+            <br />
 
-<img
-src="https://raw.githubusercontent.com/1mojisola/cynthiagrey-designs/main/IMG_2871.JPG"
-alt="Cynthiagrey Designs logo">
+            <p>
+              We combine creativity, craftsmanship and faith-inspired
+              storytelling to create festive experiences that do more than
+              beautify spaces — they connect people to the warmth, love and
+              joy of the season.
+            </p>
 
-<div class="brand-text">
-<strong>CYNTHIAGREY</strong>
-<span>DESIGNS</span>
-</div>
+            <br />
 
-</a>
+            <p>
+              From professional installations to practical décor training,
+              every experience is designed with excellence, creativity and
+              meaning.
+            </p>
 
-<button class="menu">☰</button>
+          </div>
 
-<nav>
-<a href="#work">Work</a>
-<a href="#services">Services</a>
-<a href="#gallery">Gallery</a>
-<a href="#about">About</a>
+        </div>
 
-<a
-class="nav-cta"
-href="https://wa.me/2349092171994?text=Hello%20Cynthiagrey%20Designs%2C%20I%27d%20like%20to%20make%20an%20enquiry."
-target="_blank">
-Enquire
-</a>
-</nav>
+      </div>
+    </section>
 
-</header>
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="container">
 
+        <div class="section-heading light">
+          <div class="section-label">What We Do</div>
 
-<main id="top">
+          <h2>
+            Designed for beautiful spaces and meaningful experiences.
+          </h2>
 
-<!-- HERO -->
+          <p>
+            Whether you are transforming a home, preparing a corporate space
+            for the season or learning how to build a profitable décor
+            business, Cynthiagrey Christmas brings creativity and purpose
+            together.
+          </p>
+        </div>
 
-<section class="hero">
+        <div class="service-grid">
 
-<div class="hero-content">
+          <article class="service-card">
+            <div class="service-number">01</div>
 
-<p class="eyebrow">
-CYNTHIAGREY DESIGNS
-</p>
+            <h3>Professional Installations</h3>
 
-<h1>
-Christmas<br>
-<em>beautifully styled.</em>
-</h1>
+            <p>
+              Bespoke Christmas and seasonal décor installations for corporate
+              offices, restaurants, malls, homes and other spaces that deserve
+              to come alive during the festive season.
+            </p>
+          </article>
 
-<p class="hero-copy">
-Christmas trees, lighting and festive installations designed to transform spaces into memorable seasonal experiences.
-</p>
+          <article class="service-card" id="training">
+            <div class="service-number">02</div>
 
-<div class="hero-actions">
+            <h3>Training & Masterclasses</h3>
 
-<a href="#work" class="btn btn-gold">
-Explore Our Work →
-</a>
+            <p>
+              Practical workshops and business-focused décor classes designed
+              to equip aspiring and practicing decorators with profitable
+              seasonal decorating skills.
+            </p>
+          </article>
 
-<a
-href="https://wa.me/2349092171994?text=Hello%20Cynthiagrey%20Designs%2C%20I%27d%20like%20to%20make%20an%20enquiry."
-target="_blank"
-class="btn btn-outline">
-Chat on WhatsApp
-</a>
+          <article class="service-card">
+            <div class="service-number">03</div>
 
-</div>
+            <h3>Faith-Inspired Storytelling</h3>
 
-</div>
+            <p>
+              Themed installations that go beyond aesthetics to communicate
+              stories of hope, light, love and unity through thoughtful
+              Christmas décor.
+            </p>
+          </article>
 
-</section>
-
-
-<!-- INTRO -->
-
-<section class="section" id="work">
-
-<div class="intro-grid">
-
-<div>
-
-<p class="kicker">
-01 / THE SIGNATURE
-</p>
-
-<h2 class="section-title">
-Designed for<br>
-<em>the season.</em>
-</h2>
-
-</div>
-
-<p class="intro-text">
-From richly styled Christmas trees to illuminated commercial spaces, Cynthiagrey Designs creates distinctive festive environments with colour, texture, lighting and carefully considered detail.
-</p>
-
-</div>
-
-
-<div class="feature">
-
-<div class="feature-main">
-
-<img
-src="https://raw.githubusercontent.com/1mojisola/cynthiagrey-designs/main/IMG_8374.JPG"
-alt="Cynthiagrey Christmas tree installation">
-
-</div>
-
-<div class="feature-side">
-
-<div class="feature-small">
-
-<img
-src="https://raw.githubusercontent.com/1mojisola/cynthiagrey-designs/main/IMG_4391.JPG"
-alt="Blue and silver Christmas tree">
-
-</div>
-
-<div class="feature-small">
-
-<img
-src="https://raw.githubusercontent.com/1mojisola/cynthiagrey-designs/main/IMG_8489.JPG"
-alt="Gold and white Christmas tree">
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- SERVICES -->
-
-<section class="section section-dark" id="services">
-
-<p class="kicker">
-02 / WHAT WE CREATE
-</p>
-
-<h2 class="section-title">
-A complete<br>
-<em>Christmas experience.</em>
-</h2>
-
-
-<div class="services">
-
-<article class="service">
-
-<span class="number">01</span>
-
-<h3>Christmas Trees</h3>
-
-<p>
-Statement Christmas trees styled with layered ornaments, ribbons, florals, lighting and signature colour palettes.
-</p>
-
-</article>
-
-
-<article class="service">
-
-<span class="number">02</span>
-
-<h3>Christmas Lighting</h3>
-
-<p>
-Festive lighting installations for interiors, exteriors, entrances and commercial spaces.
-</p>
-
-</article>
-
-
-<article class="service">
-
-<span class="number">03</span>
-
-<h3>Festive Installations</h3>
-
-<p>
-Complete Christmas environments featuring trees, wreaths, decorative displays and coordinated festive details.
-</p>
-
-</article>
-
-</div>
-
-</section>
-
-
-<!-- STATEMENT -->
-
-<section class="statement">
-
-<h2>
-The details make<br>
-<em>the magic.</em>
-</h2>
-
-</section>
-
-
-<!-- GALLERY -->
-
-<section class="section" id="gallery">
-
-<p class="kicker">
-03 / SELECTED WORK
-</p>
-
-<h2 class="section-title">
-Christmas,<br>
-<em>reimagined.</em>
-</h2>
-
-
-<div class="gallery">
-
-<div class="gallery-item g1">
-<img
-src="https://raw.githubusercontent.com/1mojisola/cynthiagrey-designs/main/IMG_3021.JPG"
-alt="Gold Christmas tree installation">
-</div>
-
-<div class="gallery-item g2">
-<img
-src="https://raw.githubusercontent.com/1mojisola/cynthiagrey-designs/main/IMG_3154.JPEG"
-alt="Silver and gold Christmas tree">
-</div>
-
-<div class="gallery-item g3">
-<img
-src="https://raw.githubusercontent.com/1mojisola/cynthiagrey-designs/main/IMG_4719.JPG"
-alt="Outdoor Christmas lighting">
-</div>
-
-<div class="gallery-item g4">
-<img
-src="https://raw.githubusercontent.com/1mojisola/cynthiagrey-designs/main/IMG_6204.JPG"
-alt="Commercial Christmas installation">
-</div>
-
-<div class="gallery-item g5">
-<img
-src="https://raw.githubusercontent.com/1mojisola/cynthiagrey-designs/main/IMG_6335.JPG"
-alt="Blue Christmas tree">
-</div>
-
-<div class="gallery-item g6">
-<img
-src="https://raw.githubusercontent.com/1mojisola/cynthiagrey-designs/main/IMG_6395.JPG"
-alt="Red Christmas installation">
-</div>
-
-<div class="gallery-item g7">
-<img
-src="https://raw.githubusercontent.com/1mojisola/cynthiagrey-designs/main/IMG_6417.JPG"
-alt="Green and gold Christmas tree">
-</div>
-
-<div class="gallery-item g8">
-<img
-src="https://raw.githubusercontent.com/1mojisola/cynthiagrey-designs/main/IMG_7997.JPG"
-alt="Red Christmas tree with illuminated butterflies">
-</div>
-
-<div class="gallery-item g9">
-<img
-src="https://raw.githubusercontent.com/1mojisola/cynthiagrey-designs/main/IMG_8008.JPG"
-alt="Blue and silver Christmas tree">
-</div>
-
-<div class="gallery-item g10">
-<img
-src="https://raw.githubusercontent.com/1mojisola/cynthiagrey-designs/main/IMG_8247.JPG"
-alt="Burgundy and champagne Christmas tree">
-</div>
-
-</div>
-
-</section>
-
-
-<!-- EXPERIENCE -->
-
-<section class="section section-dark" id="about">
-
-<div class="experience">
-
-<div>
-
-<p class="kicker">
-04 / THE EXPERIENCE
-</p>
-
-<h2 class="section-title">
-Make your<br>
-space <em>festive.</em>
-</h2>
-
-</div>
-
-<div class="experience-copy">
-
-<p>
-Whether it's an intimate home, a corporate environment, a retail space or a large outdoor installation, every project begins with the character of the space and the feeling the finished design should create.
-</p>
-
-<br>
-
-<p>
-Cynthiagrey Designs brings together Christmas trees, ornaments, lighting, ribbons and decorative elements to create cohesive festive displays.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="experience-list" style="margin-top:70px;">
-
-<div class="experience-row">
-<span>01</span>
-<h3>Discover the space</h3>
-</div>
-
-<div class="experience-row">
-<span>02</span>
-<h3>Develop the Christmas concept</h3>
-</div>
-
-<div class="experience-row">
-<span>03</span>
-<h3>Style & install</h3>
-</div>
-
-<div class="experience-row">
-<span>04</span>
-<h3>Light up the season</h3>
-</div>
-
-</div>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section class="contact" id="contact">
-
-<p class="kicker">
-05 / START A PROJECT
-</p>
-
-<h2>
-Let's create<br>
-<em>Christmas magic.</em>
-</h2>
-
-<p>
-Planning a Christmas installation? Talk to Cynthiagrey Designs about your space, vision and festive requirements.
-</p>
-
-<div class="contact-actions">
-
-<a
-href="https://wa.me/2349092171994?text=Hello%20Cynthiagrey%20Designs%2C%20I%27d%20like%20to%20make%20an%20enquiry."
-target="_blank"
-class="btn btn-gold">
-Chat on WhatsApp
-</a>
-
-<a
-href="https://www.instagram.com/CynthiaGreyDesigns/"
-target="_blank"
-class="btn btn-outline">
-Instagram
-</a>
-
-</div>
-
-</section>
-
-</main>
-
-
-<footer>
-
-<div>
-<strong>CYNTHIAGREY DESIGNS</strong>
-</div>
-
-<div>
-Christmas Styling • Lighting • Festive Installations
-</div>
-
-</footer>
-
-
-<a
-class="whatsapp"
-href="https://wa.me/2349092171994?text=Hello%20Cynthiagrey%20Designs%2C%20I%27d%20like%20to%20make%20an%20enquiry."
-target="_blank"
-aria-label="Chat on WhatsApp">
-◉
-</a>
-
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURE -->
+    <section class="feature">
+      <div class="container">
+
+        <div class="feature-grid">
+
+          <div class="feature-image">
+            <img
+              src="IMG_8374.JPG"
+              alt="Cynthiagrey Christmas festive installation"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="feature-copy">
+
+            <div class="section-label">Our Philosophy</div>
+
+            <blockquote>
+              “Christmas is more than décor — it’s an experience, a memory,
+              and a story.”
+            </blockquote>
+
+            <div class="gold-line"></div>
+
+            <p>
+              Cynthiagrey Christmas exists to craft these experiences with
+              excellence, creativity and meaning.
+            </p>
+
+            <p>
+              Every installation is an opportunity to create an atmosphere
+              people remember long after the decorations come down.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+
+        <div class="gallery-intro">
+
+          <div class="section-heading light">
+            <div class="section-label">Selected Work</div>
+
+            <h2>
+              Christmas, beautifully transformed.
+            </h2>
+          </div>
+
+          <p class="gallery-note">
+            A selection of Christmas trees, festive installations and seasonal
+            décor work by Cynthiagrey Christmas.
+          </p>
+
+        </div>
+
+        <div class="gallery">
+
+          <div class="gallery-item">
+            <img
+              src="IMG_3021.JPG"
+              alt="Cynthiagrey Christmas decorated space"
+              loading="lazy"
+            />
+            <div class="gallery-caption">Festive Installation</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="IMG_8374.JPG"
+              alt="Burgundy Christmas tree decoration"
+              loading="lazy"
+            />
+            <div class="gallery-caption">Christmas Tree Styling</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="IMG_8489.JPG"
+              alt="Frosted gold and white Christmas tree"
+              loading="lazy"
+            />
+            <div class="gallery-caption">Christmas Tree Styling</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="IMG_4719.JPG"
+              alt="Large festive Christmas installation"
+              loading="lazy"
+            />
+            <div class="gallery-caption">Large-Scale Installation</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="IMG_4391.JPG"
+              alt="Christmas decoration by Cynthiagrey Christmas"
+              loading="lazy"
+            />
+            <div class="gallery-caption">Seasonal Décor</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="IMG_3154.JPEG"
+              alt="Christmas décor installation"
+              loading="lazy"
+            />
+            <div class="gallery-caption">Festive Styling</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="IMG_6204.JPG"
+              alt="Christmas decoration"
+              loading="lazy"
+            />
+            <div class="gallery-caption">Christmas Collection</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="IMG_6335.JPG"
+              alt="Seasonal Christmas décor"
+              loading="lazy"
+            />
+            <div class="gallery-caption">Seasonal Installation</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="IMG_6395.JPG"
+              alt="Festive Christmas styling"
+              loading="lazy"
+            />
+            <div class="gallery-caption">Festive Styling</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="IMG_6417.JPG"
+              alt="Christmas tree decoration"
+              loading="lazy"
+            />
+            <div class="gallery-caption">Christmas Tree</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="IMG_7997.JPG"
+              alt="Cynthiagrey Christmas installation"
+              loading="lazy"
+            />
+            <div class="gallery-caption">Festive Installation</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="IMG_8008.JPG"
+              alt="Christmas decoration"
+              loading="lazy"
+            />
+            <div class="gallery-caption">Seasonal Décor</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="IMG_8247.JPG"
+              alt="Christmas tree styling"
+              loading="lazy"
+            />
+            <div class="gallery-caption">Christmas Styling</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="IMG_4638.JPG"
+              alt="Festive installation"
+              loading="lazy"
+            />
+            <div class="gallery-caption">Festive Installation</div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="IMG_2555.JPG"
+              alt="Grey Christmas Warehouse"
+              loading="lazy"
+            />
+            <div class="gallery-caption">Cynthiagrey Christmas</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="values">
+      <div class="container">
+
+        <div class="values-grid">
+
+          <div class="values-title">
+            <div class="section-label">Why Cynthiagrey</div>
+
+            <h2>
+              Creativity with purpose.
+            </h2>
+          </div>
+
+          <div class="values-list">
+
+            <article class="value">
+              <h3>Creativity & Excellence</h3>
+              <p>
+                Bespoke designs carefully tailored to the client's vision,
+                space and festive atmosphere.
+              </p>
+            </article>
+
+            <article class="value">
+              <h3>Faith-Inspired Storytelling</h3>
+              <p>
+                Décor that carries meaning beyond aesthetics and communicates
+                stories of hope, light and unity.
+              </p>
+            </article>
+
+            <article class="value">
+              <h3>Training for Impact</h3>
+              <p>
+                Equipping people with practical and profitable seasonal
+                decorating skills.
+              </p>
+            </article>
+
+            <article class="value">
+              <h3>Africa-Centered Leadership</h3>
+              <p>
+                Building a leading African voice in Christmas and seasonal
+                décor, creativity and training.
+              </p>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WHO WE SERVE -->
+    <section class="audience">
+      <div class="container">
+
+        <div class="section-heading light">
+          <div class="section-label">Who We Work With</div>
+
+          <h2>
+            Spaces of every kind can tell a Christmas story.
+          </h2>
+
+          <p>
+            We collaborate with businesses, communities, creatives and
+            organizations looking to create immersive seasonal experiences.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+
+          <article class="audience-item">
+            <div class="audience-icon">01</div>
+            <h3>Homes</h3>
+          </article>
+
+          <article class="audience-item">
+            <div class="audience-icon">02</div>
+            <h3>Corporate Brands</h3>
+          </article>
+
+          <article class="audience-item">
+            <div class="audience-icon">03</div>
+            <h3>Restaurants & Malls</h3>
+          </article>
+
+          <article class="audience-item">
+            <div class="audience-icon">04</div>
+            <h3>Event Planners & Lifestyle Brands</h3>
+          </article>
+
+          <article class="audience-item">
+            <div class="audience-icon">05</div>
+            <h3>Faith Communities & NGOs</h3>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VISION -->
+    <section class="vision">
+      <div class="container">
+
+        <div class="vision-inner">
+
+          <div class="section-label">The Vision</div>
+
+          <h2>
+            Becoming Africa's leading Christmas & seasonal décor brand.
+          </h2>
+
+          <p>
+            Cynthiagrey Christmas is building toward a future where seasonal
+            décor becomes an avenue for creativity, entrepreneurship,
+            storytelling and shared joy across Africa.
+          </p>
+
+          <a href="#contact" class="btn btn-primary">
+            Start a Conversation
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOOKING AHEAD -->
+    <section class="future">
+      <div class="container">
+
+        <div class="future-grid">
+
+          <div>
+            <div class="section-label">Looking Ahead</div>
+
+            <h2>
+              Building the future of seasonal décor.
+            </h2>
+          </div>
+
+          <div class="future-list">
+
+            <article class="future-item">
+              <div class="future-number"></div>
+
+              <div>
+                <h3>Expand Training Across Africa</h3>
+
+                <p>
+                  Growing training programs that equip more people with
+                  seasonal décor and business skills.
+                </p>
+              </div>
+            </article>
+
+            <article class="future-item">
+              <div class="future-number"></div>
+
+              <div>
+                <h3>Develop Seasonal Décor Products</h3>
+
+                <p>
+                  Creating product lines that make beautiful seasonal styling
+                  more accessible.
+                </p>
+              </div>
+            </article>
+
+            <article class="future-item">
+              <div class="future-number"></div>
+
+              <div>
+                <h3>Build Global Collaborations</h3>
+
+                <p>
+                  Developing international collaborations with global décor
+                  brands and creative partners.
+                </p>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container">
+
+        <div class="contact-grid">
+
+          <div>
+
+            <div class="section-label">Let's Create Something Beautiful</div>
+
+            <h2>
+              Bring your space to life.
+            </h2>
+
+            <p class="contact-copy">
+              Planning a Christmas installation, looking for seasonal décor
+              training, or interested in a collaboration? Connect with
+              Cynthiagrey Christmas and let's start the conversation.
+            </p>
+
+            <br />
+
+            <a
+              href="https://wa.me/2349092171994?text=Hello%20Cynthiagrey%20Christmas%2C%20I%27d%20like%20to%20make%20an%20enquiry."
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary"
+            >
+              Chat on WhatsApp
+            </a>
+
+          </div>
+
+          <div class="contact-details">
+
+            <div class="contact-row">
+              <span>WhatsApp</span>
+
+              <a href="tel:+2349092171994">
+                +234 909 217 1994
+              </a>
+            </div>
+
+            <div class="contact-row">
+              <span>Email</span>
+
+              <a href="mailto:chizoba.cynthiagrey@gmail.com">
+                chizoba.cynthiagrey@gmail.com
+              </a>
+            </div>
+
+            <div class="contact-row">
+              <span>Instagram</span>
+
+              <a
+                href="https://www.instagram.com/cynthiagrey_designs/"
+                target="_blank"
+                rel="noopener"
+              >
+                @cynthiagrey_designs
+              </a>
+            </div>
+
+            <div class="contact-row">
+              <span>Facebook</span>
+
+              <a
+                href="https://www.facebook.com/profile.php?id=100028131534839"
+                target="_blank"
+                rel="noopener"
+              >
+                Cynthiagrey Designs
+              </a>
+            </div>
+
+            <div class="contact-row">
+              <span>Studio</span>
+
+              <span>
+                14 Tosin Adelowo Street, Oba Amusa Estate,
+                Agungi, Lagos
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+
+      <div class="footer-inner">
+
+        <div>
+          <div class="footer-brand">
+            Cynthiagrey Christmas
+          </div>
+
+          <div class="footer-copy">
+            Christmas and Seasonal Decorations
+          </div>
+        </div>
+
+        <div class="footer-social">
+          <a
+            href="https://www.instagram.com/cynthiagrey_designs/"
+            target="_blank"
+            rel="noopener"
+          >
+            Instagram
+          </a>
+
+          <a
+            href="https://www.facebook.com/profile.php?id=100028131534839"
+            target="_blank"
+            rel="noopener"
+          >
+            Facebook
+          </a>
+        </div>
+
+        <div class="footer-copy">
+          © <span id="year"></span> Cynthiagrey Christmas
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a
+    class="whatsapp"
+    href="https://wa.me/2349092171994?text=Hello%20Cynthiagrey%20Christmas%2C%20I%27d%20like%20to%20make%20an%20enquiry."
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat with Cynthiagrey Christmas on WhatsApp"
+  >
+    ✆
+  </a>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Prevent broken images from leaving ugly empty spaces.
+    document.querySelectorAll("img").forEach((img) => {
+      img.addEventListener("error", () => {
+        img.style.display = "none";
+      });
+    });
+  </script>
 
 </body>
 </html>
