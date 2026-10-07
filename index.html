@@ -473,7 +473,7 @@ section{
 .portfolio-folders{
   margin-top:45px;
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(5,1fr);
   gap:14px;
 }
 
@@ -526,14 +526,14 @@ section{
 
 .folder h3{
   font-family:Georgia,serif;
-  font-size:1.45rem;
+  font-size:1.32rem;
   font-weight:500;
   margin:20px 0 8px;
 }
 
 .folder p{
   color:var(--muted);
-  font-size:.84rem;
+  font-size:.82rem;
 }
 
 .folder-count{
@@ -1022,7 +1022,7 @@ footer{
    RESPONSIVE — TABLET
 ========================================================= */
 
-@media(max-width:1050px){
+@media(max-width:1100px){
 
   .nav-links{
     gap:13px;
@@ -1030,7 +1030,7 @@ footer{
   }
 
   .portfolio-folders{
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(3,1fr);
   }
 
   .who-grid{
@@ -1142,6 +1142,10 @@ footer{
   .services-grid,
   .future-grid{
     grid-template-columns:1fr;
+  }
+
+  .portfolio-folders{
+    grid-template-columns:repeat(2,1fr);
   }
 
   .gallery{
@@ -1784,13 +1788,19 @@ footer{
 
       <p class="portfolio-note">
         Explore selected Christmas and seasonal décor work across
-        trees, lighting, installations and commercial experiences.
+        trees, lighting, installations, commercial experiences and video.
       </p>
 
     </div>
 
 
+    <!-- =================================================
+         PORTFOLIO FOLDERS
+    ================================================== -->
+
     <div class="portfolio-folders">
+
+      <!-- TREES -->
 
       <div
         class="folder active"
@@ -1813,11 +1823,13 @@ footer{
         </p>
 
         <div class="folder-count">
-          13
+          5
         </div>
 
       </div>
 
+
+      <!-- LIGHTING -->
 
       <div
         class="folder"
@@ -1846,6 +1858,8 @@ footer{
       </div>
 
 
+      <!-- INSTALLATIONS -->
+
       <div
         class="folder"
         data-panel="installations"
@@ -1867,11 +1881,13 @@ footer{
         </p>
 
         <div class="folder-count">
-          8
+          7
         </div>
 
       </div>
 
+
+      <!-- COMMERCIAL -->
 
       <div
         class="folder"
@@ -1894,7 +1910,36 @@ footer{
         </p>
 
         <div class="folder-count">
-          7
+          2
+        </div>
+
+      </div>
+
+
+      <!-- VIDEO -->
+
+      <div
+        class="folder"
+        data-panel="videos"
+        tabindex="0"
+        role="button"
+        aria-label="View Video Work"
+      >
+
+        <div class="folder-number">
+          05 / COLLECTION
+        </div>
+
+        <h3>
+          Video Work
+        </h3>
+
+        <p>
+          Selected project footage and Christmas décor experiences.
+        </p>
+
+        <div class="folder-count">
+          5
         </div>
 
       </div>
@@ -1902,7 +1947,16 @@ footer{
     </div>
 
 
+    <!-- =================================================
+         PORTFOLIO CONTENT
+    ================================================== -->
+
     <div class="portfolio-content">
+
+
+      <!-- =================================================
+           CHRISTMAS TREES
+      ================================================== -->
 
       <div class="media-panel active" id="trees">
 
@@ -1913,7 +1967,7 @@ footer{
           </h3>
 
           <span>
-            13 selected works
+            5 selected works
           </span>
 
         </div>
@@ -1922,6 +1976,7 @@ footer{
         <div class="gallery">
 
           <div class="gallery-item">
+
             <img
               src="IMG_8489.JPG"
               alt="Frosted gold and white Christmas tree"
@@ -1932,10 +1987,12 @@ footer{
               <strong>Frosted Gold & White</strong>
               <span>Christmas Tree Styling</span>
             </div>
+
           </div>
 
 
           <div class="gallery-item">
+
             <img
               src="IMG_8374.JPG"
               alt="Burgundy and red Christmas tree"
@@ -1946,10 +2003,12 @@ footer{
               <strong>Burgundy Christmas Statement</strong>
               <span>Christmas Tree Styling</span>
             </div>
+
           </div>
 
 
           <div class="gallery-item">
+
             <img
               src="IMG_3154.JPEG"
               alt="Christmas tree decoration"
@@ -1960,10 +2019,12 @@ footer{
               <strong>Signature Tree Styling</strong>
               <span>Christmas Décor</span>
             </div>
+
           </div>
 
 
           <div class="gallery-item">
+
             <img
               src="IMG_6417.JPG"
               alt="Christmas tree design"
@@ -1974,13 +2035,15 @@ footer{
               <strong>Contemporary Christmas Tree</strong>
               <span>Tree Styling</span>
             </div>
+
           </div>
 
 
           <div class="gallery-item">
+
             <img
               src="IMG_6204.JPG"
-              alt="Festive Christmas lighting detail"
+              alt="Festive Christmas décor detail"
               loading="lazy"
             >
 
@@ -1988,6 +2051,7 @@ footer{
               <strong>Festive Christmas Detail</strong>
               <span>Christmas Décor</span>
             </div>
+
           </div>
 
         </div>
@@ -1995,7 +2059,9 @@ footer{
       </div>
 
 
-      <!-- LIGHTING -->
+      <!-- =================================================
+           LIGHTING
+      ================================================== -->
 
       <div class="media-panel" id="lighting">
 
@@ -2015,57 +2081,83 @@ footer{
         <div class="gallery">
 
           <div class="gallery-item">
-            <img src="IMG-20261007-WA0002.jpg"
+            <img
+              src="IMG-20261007-WA0002.jpg"
               alt="Cynthiagrey Christmas lighting installation"
-              loading="lazy">
+              loading="lazy"
+            >
           </div>
 
+
           <div class="gallery-item">
-            <img src="IMG-20261007-WA0003.jpg"
+            <img
+              src="IMG-20261007-WA0003.jpg"
               alt="Cynthiagrey Christmas festive lighting"
-              loading="lazy">
+              loading="lazy"
+            >
           </div>
 
+
           <div class="gallery-item">
-            <img src="IMG-20261007-WA0004(1).jpg"
+            <img
+              src="IMG-20261007-WA0004(1).jpg"
               alt="Cynthiagrey Christmas lighting design"
-              loading="lazy">
+              loading="lazy"
+            >
           </div>
 
+
           <div class="gallery-item">
-            <img src="IMG-20261007-WA0005.jpg"
+            <img
+              src="IMG-20261007-WA0005.jpg"
               alt="Cynthiagrey Christmas lighting display"
-              loading="lazy">
+              loading="lazy"
+            >
           </div>
 
+
           <div class="gallery-item">
-            <img src="IMG-20261007-WA0006.jpg"
+            <img
+              src="IMG-20261007-WA0006.jpg"
               alt="Cynthiagrey Christmas seasonal lighting"
-              loading="lazy">
+              loading="lazy"
+            >
           </div>
 
+
           <div class="gallery-item">
-            <img src="IMG-20261007-WA0007.jpg"
+            <img
+              src="IMG-20261007-WA0007.jpg"
               alt="Cynthiagrey Christmas illuminated décor"
-              loading="lazy">
+              loading="lazy"
+            >
           </div>
 
+
           <div class="gallery-item">
-            <img src="IMG-20261007-WA0008.jpg"
+            <img
+              src="IMG-20261007-WA0008.jpg"
               alt="Cynthiagrey Christmas lighting experience"
-              loading="lazy">
+              loading="lazy"
+            >
           </div>
 
+
           <div class="gallery-item">
-            <img src="IMG-20261007-WA0009.jpg"
+            <img
+              src="IMG-20261007-WA0009.jpg"
               alt="Cynthiagrey Christmas lighting installation"
-              loading="lazy">
+              loading="lazy"
+            >
           </div>
 
+
           <div class="gallery-item">
-            <img src="IMG-20261007-WA0010.jpg"
+            <img
+              src="IMG-20261007-WA0010.jpg"
               alt="Cynthiagrey Christmas festive lights"
-              loading="lazy">
+              loading="lazy"
+            >
           </div>
 
         </div>
@@ -2073,7 +2165,9 @@ footer{
       </div>
 
 
-      <!-- INSTALLATIONS -->
+      <!-- =================================================
+           INSTALLATIONS
+      ================================================== -->
 
       <div class="media-panel" id="installations">
 
@@ -2084,7 +2178,7 @@ footer{
           </h3>
 
           <span>
-            8 selected works
+            7 selected works
           </span>
 
         </div>
@@ -2093,6 +2187,7 @@ footer{
         <div class="gallery">
 
           <div class="gallery-item">
+
             <img
               src="IMG_3021.JPG"
               alt="Luxury Christmas installation"
@@ -2103,10 +2198,12 @@ footer{
               <strong>Luxury Festive Installation</strong>
               <span>Seasonal Décor</span>
             </div>
+
           </div>
 
 
           <div class="gallery-item">
+
             <img
               src="IMG_4391.JPG"
               alt="Christmas décor installation"
@@ -2117,10 +2214,12 @@ footer{
               <strong>Elegant Seasonal Styling</strong>
               <span>Christmas Installation</span>
             </div>
+
           </div>
 
 
           <div class="gallery-item">
+
             <img
               src="IMG_6335.JPG"
               alt="Christmas seasonal décor"
@@ -2131,10 +2230,12 @@ footer{
               <strong>Seasonal Décor</strong>
               <span>Installation</span>
             </div>
+
           </div>
 
 
           <div class="gallery-item">
+
             <img
               src="IMG_7997.JPG"
               alt="Christmas décor installation"
@@ -2145,10 +2246,12 @@ footer{
               <strong>Festive Interior</strong>
               <span>Seasonal Installation</span>
             </div>
+
           </div>
 
 
           <div class="gallery-item">
+
             <img
               src="IMG_8008.JPG"
               alt="Christmas decoration"
@@ -2159,6 +2262,39 @@ footer{
               <strong>Christmas Atmosphere</strong>
               <span>Seasonal Décor</span>
             </div>
+
+          </div>
+
+
+          <div class="gallery-item">
+
+            <img
+              src="IMG_8247.JPG"
+              alt="Cynthiagrey Christmas seasonal installation"
+              loading="lazy"
+            >
+
+            <div class="gallery-caption">
+              <strong>Festive Space Styling</strong>
+              <span>Seasonal Installation</span>
+            </div>
+
+          </div>
+
+
+          <div class="gallery-item">
+
+            <img
+              src="IMG_4638.JPG"
+              alt="Cynthiagrey Christmas décor installation"
+              loading="lazy"
+            >
+
+            <div class="gallery-caption">
+              <strong>Christmas Installation</strong>
+              <span>Seasonal Décor</span>
+            </div>
+
           </div>
 
         </div>
@@ -2166,7 +2302,9 @@ footer{
       </div>
 
 
-      <!-- COMMERCIAL -->
+      <!-- =================================================
+           COMMERCIAL
+      ================================================== -->
 
       <div class="media-panel" id="commercial">
 
@@ -2177,7 +2315,7 @@ footer{
           </h3>
 
           <span>
-            7 selected works
+            2 selected works
           </span>
 
         </div>
@@ -2218,79 +2356,145 @@ footer{
 
         </div>
 
+      </div>
 
-        <div style="margin-top:45px;">
 
-          <div class="media-panel-header">
+      <!-- =================================================
+           VIDEO WORK
+      ================================================== -->
 
-            <h3>
-              Video Work
-            </h3>
+      <div class="media-panel" id="videos">
 
-            <span>
-              Selected project footage
-            </span>
+        <div class="media-panel-header">
+
+          <h3>
+            Video Work
+          </h3>
+
+          <span>
+            5 selected project videos
+          </span>
+
+        </div>
+
+
+        <div class="video-grid">
+
+
+          <div class="video-card">
+
+            <video
+              controls
+              playsinline
+              preload="metadata"
+            >
+              <source
+                src="IMG_5068.MP4"
+                type="video/mp4"
+              >
+
+              Your browser does not support video playback.
+
+            </video>
+
+            <p>
+              Cynthiagrey Christmas project footage
+            </p>
+
+          </div>
+
+
+          <div class="video-card">
+
+            <video
+              controls
+              playsinline
+              preload="metadata"
+            >
+              <source
+                src="IMG_5105.MP4"
+                type="video/mp4"
+              >
+
+              Your browser does not support video playback.
+
+            </video>
+
+            <p>
+              Cynthiagrey Christmas project footage
+            </p>
 
           </div>
 
 
-          <div class="video-grid">
+          <div class="video-card">
 
-            <div class="video-card">
-              <video controls playsinline preload="metadata">
-                <source src="IMG_5068.MP4" type="video/mp4">
-              </video>
+            <video
+              controls
+              playsinline
+              preload="metadata"
+            >
+              <source
+                src="IMG_6207.MP4"
+                type="video/mp4"
+              >
 
-              <p>
-                Cynthiagrey Christmas project footage
-              </p>
-            </div>
+              Your browser does not support video playback.
 
+            </video>
 
-            <div class="video-card">
-              <video controls playsinline preload="metadata">
-                <source src="IMG_5105.MP4" type="video/mp4">
-              </video>
-
-              <p>
-                Cynthiagrey Christmas project footage
-              </p>
-            </div>
-
-
-            <div class="video-card">
-              <video controls playsinline preload="metadata">
-                <source src="IMG_6207.MP4" type="video/mp4">
-              </video>
-
-              <p>
-                Cynthiagrey Christmas project footage
-              </p>
-            </div>
-
-
-            <div class="video-card">
-              <video controls playsinline preload="metadata">
-                <source src="IMG_7891.MP4" type="video/mp4">
-              </video>
-
-              <p>
-                Cynthiagrey Christmas project footage
-              </p>
-            </div>
-
-
-            <div class="video-card">
-              <video controls playsinline preload="metadata">
-                <source src="IMG_8151.MOV" type="video/quicktime">
-              </video>
-
-              <p>
-                Cynthiagrey Christmas project footage
-              </p>
-            </div>
+            <p>
+              Cynthiagrey Christmas project footage
+            </p>
 
           </div>
+
+
+          <div class="video-card">
+
+            <video
+              controls
+              playsinline
+              preload="metadata"
+            >
+              <source
+                src="IMG_7891.MP4"
+                type="video/mp4"
+              >
+
+              Your browser does not support video playback.
+
+            </video>
+
+            <p>
+              Cynthiagrey Christmas project footage
+            </p>
+
+          </div>
+
+
+          <div class="video-card">
+
+            <video
+              controls
+              playsinline
+              preload="metadata"
+            >
+              <source
+                src="IMG_8151.MOV"
+                type="video/quicktime"
+              >
+
+              Your browser does not support video playback.
+
+            </video>
+
+            <p>
+              Cynthiagrey Christmas project footage
+            </p>
+
+          </div>
+
 
         </div>
 
@@ -2831,29 +3035,60 @@ const menuToggle = document.getElementById("menuToggle");
 const mobileMenu = document.getElementById("mobileMenu");
 
 function closeMobileMenu(){
+
   menuToggle.classList.remove("active");
+
   mobileMenu.classList.remove("active");
-  menuToggle.setAttribute("aria-expanded","false");
-  menuToggle.setAttribute("aria-label","Open navigation menu");
+
+  menuToggle.setAttribute(
+    "aria-expanded",
+    "false"
+  );
+
+  menuToggle.setAttribute(
+    "aria-label",
+    "Open navigation menu"
+  );
+
   document.body.classList.remove("menu-open");
+
 }
 
+
 function openMobileMenu(){
+
   menuToggle.classList.add("active");
+
   mobileMenu.classList.add("active");
-  menuToggle.setAttribute("aria-expanded","true");
-  menuToggle.setAttribute("aria-label","Close navigation menu");
+
+  menuToggle.setAttribute(
+    "aria-expanded",
+    "true"
+  );
+
+  menuToggle.setAttribute(
+    "aria-label",
+    "Close navigation menu"
+  );
+
   document.body.classList.add("menu-open");
+
 }
+
 
 menuToggle.addEventListener("click", () => {
 
-  const isOpen = mobileMenu.classList.contains("active");
+  const isOpen =
+    mobileMenu.classList.contains("active");
 
   if(isOpen){
+
     closeMobileMenu();
+
   }else{
+
     openMobileMenu();
+
   }
 
 });
@@ -2861,13 +3096,17 @@ menuToggle.addEventListener("click", () => {
 
 /* Close menu after selecting a link */
 
-document.querySelectorAll("#mobileMenu a").forEach(link => {
+document
+  .querySelectorAll("#mobileMenu a")
+  .forEach(link => {
 
-  link.addEventListener("click", () => {
-    closeMobileMenu();
+    link.addEventListener("click", () => {
+
+      closeMobileMenu();
+
+    });
+
   });
-
-});
 
 
 /* Close mobile menu when screen becomes desktop */
@@ -2875,7 +3114,9 @@ document.querySelectorAll("#mobileMenu a").forEach(link => {
 window.addEventListener("resize", () => {
 
   if(window.innerWidth > 900){
+
     closeMobileMenu();
+
   }
 
 });
@@ -2885,44 +3126,72 @@ window.addEventListener("resize", () => {
    PORTFOLIO FOLDERS
 ========================================================= */
 
-const folders = document.querySelectorAll(".folder");
-const panels = document.querySelectorAll(".media-panel");
+const folders =
+  document.querySelectorAll(".folder");
+
+const panels =
+  document.querySelectorAll(".media-panel");
+
 
 function openPortfolioPanel(panelId){
 
   folders.forEach(folder => {
+
+    const isActive =
+      folder.dataset.panel === panelId;
+
     folder.classList.toggle(
       "active",
-      folder.dataset.panel === panelId
+      isActive
     );
+
+    folder.setAttribute(
+      "aria-pressed",
+      isActive ? "true" : "false"
+    );
+
   });
 
+
   panels.forEach(panel => {
+
     panel.classList.toggle(
       "active",
       panel.id === panelId
     );
+
   });
 
 }
 
 
+/* Open folder on click */
+
 folders.forEach(folder => {
 
   folder.addEventListener("click", () => {
 
-    openPortfolioPanel(folder.dataset.panel);
+    openPortfolioPanel(
+      folder.dataset.panel
+    );
 
   });
 
 
+  /* Keyboard accessibility */
+
   folder.addEventListener("keydown", event => {
 
-    if(event.key === "Enter" || event.key === " "){
+    if(
+      event.key === "Enter" ||
+      event.key === " "
+    ){
 
       event.preventDefault();
 
-      openPortfolioPanel(folder.dataset.panel);
+      openPortfolioPanel(
+        folder.dataset.panel
+      );
 
     }
 
@@ -2935,15 +3204,24 @@ folders.forEach(folder => {
    PREVENT MEDIA FROM CAUSING HORIZONTAL OVERFLOW
 ========================================================= */
 
-document.querySelectorAll("img, video").forEach(media => {
+document
+  .querySelectorAll("img, video")
+  .forEach(media => {
 
-  media.addEventListener("load", () => {
+    media.addEventListener("load", () => {
 
-    media.style.maxWidth = "100%";
+      media.style.maxWidth = "100%";
+
+    });
 
   });
 
-});
+
+/* =========================================================
+   INITIAL PORTFOLIO STATE
+========================================================= */
+
+openPortfolioPanel("trees");
 
 </script>
 
